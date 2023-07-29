@@ -1,0 +1,113 @@
+body {
+  background-image: url("plane.jpg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.right-element {
+  float: right;
+  margin-top: 100px;
+  margin-right: 50px;
+  max-width: 400px;
+}
+.container {
+ 
+  font-size: small;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 50vw;
+  background-color: #f2f2f2;
+}
+
+.col-4{
+  font-size: medium;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 15vw 35vw; 
+  grid-gap: 10px; 
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+#tour-package {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 40px;
+  width:150px;
+  max-width: 250px;
+
+
+}
+input[type="submit"] {
+  background-color: #1b7ced;
+  align-items: center;
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#term,
+#avail1,
+#avail2,
+#avail3 {
+  margin-left: 40px;
+}
+label {
+  margin-bottom: 30px;
+}
+option {
+  font-size: small;
+  width: 300px;
+}
+select {
+  font-size: small;
+  width:150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+ min-width: 200px;
+  }
+.row{
+  grid-template-columns: 1fr;
+}
+  .right-element {
+    float: none; 
+  margin-top: 0;
+    margin-right: 0; 
+  }
+
+  .col-4 {
+    width: 100%;
+
+ }
+
+  .col-8 {
+    width: 100%; 
+    margin-left: 0;
+  }
+
+  input[type="submit"] {
+    margin-left: 0; 
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    font-size: medium;
+    grid-template-columns: 15vw 35vw; 
+  }
+}
