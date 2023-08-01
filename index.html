@@ -22,6 +22,7 @@
             <input
               type="text"
               id="fname"
+              class="input"
               placeholder="FirstName LastName"
               required
             />
@@ -34,6 +35,7 @@
           </div>
           <div class="col-8">
             <input
+            class="input"
               type="email"
               id="email"
               placeholder="EMAIL_ADDRESS"
@@ -46,7 +48,7 @@
             <label for="tour-package">Select Tour Package</label>
           </div>
           <div class="col-8">
-            <select name="tour-package" id="tour-package" required>
+            <select name="tour-package" id="tour-package" class="input" required>
               <option value="Paris">Paris</option>
               <option value="Bangkok">Bangkok</option>
               <option value="Cairo">Cairo</option>
@@ -61,7 +63,7 @@
             <label for="Arrival_DATE">Arrival date</label>
           </div>
           <div class="col-8">
-            <input type="date" id="Arrival_DATE" required />
+            <input type="date" id="Arrival_DATE" required  class="input" />
           </div>
         </div>
 
@@ -74,6 +76,7 @@
               type="number"
               id="number"
               placeholder="unknown_type"
+              class="input"
               required
             />
           </div>
@@ -83,15 +86,16 @@
             <label for="number">What you want to avail?</label>
           </div>
           <div class="col-8">
-            <input type="checkbox" id="avail1" name="avail1" value="Boarding" />
+            <input type="checkbox" id="avail1" name="avail1" value="Boarding"  class="input" />
             <label for="avail1"> Boarding</label><br />
-            <input type="checkbox" id="avail2" name="avail2" value="Fooding" />
+            <input type="checkbox" id="avail2" name="avail2" value="Fooding"  class="input" />
             <label for="avail2"> Fooding</label><br />
             <input
               type="checkbox"
               id="avail3"
               name="avail3"
               value="Sight Seeing"
+              class="input"
             />
             <label for="avail3"> Sight Seeing</label><br />
           </div>
@@ -101,7 +105,7 @@
             <label for="code">coupon code</label>
           </div>
           <div class="col-8">
-            <input type="text" id="code" placeholder="unknown_type" required />
+            <input type="text" id="code" placeholder="unknown_type"  class="input" required />
           </div>
         </div>
         <div class="row">
@@ -114,6 +118,7 @@
               id="term"
               name="term"
               value="I agree"
+              class="input"
               required
             />
             <label for="avail1"> I agree</label>
@@ -122,6 +127,7 @@
               id="term"
               name="term"
               value="I disagree"
+              class="input"
               required
             />
             <label for="avail2"> I disagree</label>
@@ -129,13 +135,12 @@
         </div>
 
         <div >
-          <input type="submit" placeholder="complete reservation" required onsubmit="" />
+          <input type="submit" placeholder="complete reservation" required onsubmit=""  />
         </div>
        
 <script>
 const form = document.getElementById('reservationForm');
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); 
 alert(" Thank you for submitting the form!")
 });
 
